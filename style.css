@@ -104,3 +104,33 @@ button:hover {
   background: #833ab4;
   color: white;
 }
+
+.nota-input-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.nota-input-row textarea {
+  flex: 1;
+  margin-bottom: 0;
+  height: 60px;
+}
+
+.nota-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  gap: 10px;
+}
+
+.nota-testo {
+  flex: 1;
+  font-size: 0.95rem;
+  word-break: break-word;
+}
