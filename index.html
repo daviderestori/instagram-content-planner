@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Content Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>📸 Instagram Content Planner</h1>
+  </header>
+
+  <main>
+
+    <!-- SEZIONE: Aggiungi Post -->
+    <section id="aggiungi-post">
+      <h2>➕ Nuovo Post</h2>
+      <input type="text" id="titolo" placeholder="Titolo del post">
+      <textarea id="caption" placeholder="Caption..."></textarea>
+      <input type="date" id="data">
+      <select id="stato">
+        <option value="idea">💡 Idea</option>
+        <option value="bozza">✏️ Bozza</option>
+        <option value="pronto">✅ Pronto</option>
+        <option value="pubblicato">🚀 Pubblicato</option>
+      </select>
+      <button onclick="aggiungiPost()">Salva Post</button>
+    </section>
+
+    <!-- SEZIONE: Lista Post -->
+    <section id="lista-post">
+      <h2>📅 I tuoi Post</h2>
+      <div id="posts-container"></div>
+    </section>
+
+    <!-- SEZIONE: Hashtag -->
+    <section id="hashtag-section">
+      <h2>#️⃣ Hashtag Salvati</h2>
+      <input type="text" id="nuovo-hashtag" placeholder="#tuohashtag">
+      <button onclick="aggiungiHashtag()">Aggiungi</button>
+      <div id="hashtag-container"></div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
